@@ -85,3 +85,47 @@ Well, the *input* type **file** allows just that. Add a label with the text Uplo
 Next, add a min attribute to the input with a value of 13 because users under the age of 13 should not register. Also, users probably will not be over the age of 120; add a max attribute with a value of 120.
 
 Now, if someone tries to submit the form with values outside of the range, a warning will appear, and the form will not submit. Give it a try.
+
+
+13) Adding a dropdown to the form is easy with the select element. The select element is a container for a group of option elements, and the option element acts as a label for each dropdown option. Both elements require closing tags.
+
+Start by adding a select element below the two label elements. Then nest 5 option elements within the select element.
+
+
+14) Submitting the form with an option selected would not send a useful value to the server. As such, each option needs to be given a value attribute. Without which, the text content of the option will be submitted to the server.
+
+Give the first option a value of "", and the subsequent option elements value attributes from 1 to 4.
+
+15) The textarea element acts like an input element of type text, but comes with the added benefit of being able to receive multi-line text, and an initial number of text rows and columns.
+
+Users will be able to register with a bio. Add a label with the text Provide a bio: at the end of the fieldset. Add a textarea element inside the label element. Note that the textarea requires a closing tag.
+ - The textarea appears too small. To give it an initial size, you can add the rows and cols attributes.
+Add an initial size of 3 rows and 30 columns.
+- the placeholder attribute is used. The placeholder accepts a text value, which is displayed until the user starts typing.
+Give the textarea a placeholder of I like coding on the beach....
+<hr style="border: 1px dotted black;">
+
+> - Link the applicable form elements and their label elements together.
+>
+>Use profile-picture, age, referrer, and bio as values for the respective id attributes.
+
+<hr style="border: 1px dashed black;">
+
+16) With form submissions, it is useful, and good practice, to provide each submittable element with a name attribute. This attribute is used to identify the element in the form submission.
+
+Give each submittable element a unique name attribute of your choosing, except for the two radio inputs.
+
+
+17) To style the submit button, you can use an attribute selector, which selects an element based on the given attribute value. Here is an example:
+
+input[name="password"]
+The above selects input elements with a name attribute value of password.
+
+Now, use the attribute selector to style the submit button with a display of block, and a width of 60%.
+
+
+
+18)  Most browsers inject their own default CSS properties and values for different elements. If you look closely, you might be able to notice the file input is smaller than the other text input elements. By default, a padding of 1px 2px is given to input elements you can type in.
+
+Using another attribute selector, style the input with a type of file to be the same padding as the other input elements.
+
