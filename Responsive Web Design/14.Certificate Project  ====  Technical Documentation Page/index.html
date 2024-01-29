@@ -1,12 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CSS Technical Documentation Page</title>
+<link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
+
+<nav id="navbar">
+<header>CSS Documentation</header>
+<ul>
+  <li>
+    <a href="#introduction" class="nav-link">Introduction</a>
+  </li>
+  
+  <li>
+    <a href="#prerequisites" class="nav-link">Prerequisites</a>
+  </li>
+
+  <li>
+    <a href="#selectors_and_declarations" class="nav-link">Selectors and Declarations</a>
+  </li>
+
+  <li>
+    <a href="#box_model" class="nav-link">Box Model</a>
+  </li>
+
+  <li>
+    <a href="#layout" class="nav-link">Layout</a>
+  </li>
+
+  <li>
+    <a href="#colors_and_typography" class="nav-link">Colors and Typography</a>
+  </li>
+
+  <li>
+    <a href="#flexbox" class="nav-link">Flexbox</a>
+  </li>
+
+  <li>
+    <a href="#grid" class="nav-link">Grid</a>
+  </li>
+
+  <li>
+    <a href="#transitions_and_animations" class="nav-link">Transitions and Animations</a>
+  </li>
+
+  <li>
+    <a href="#media_queries" class="nav-link">Media Queries</a>
+  </li>
+
+  <li>
+    <a href="#browser_compatibility" class="nav-link">Browser Compatibility</a>
+  </li>
+
+  <li>
+    <a href="#validation" class="nav-link">Validation</a>
+  </li>
+
+  <li>
+    <a href="#conclusion" class="nav-link">Conclusion</a>
+  </li>
+</ul>
+</nav>
+
+<main id="main-doc">
+  <section class="main-section" id="introduction" >
+    <header id="introduction" >Introduction</header>
+    <p>
+      CSS, or Cascading Style Sheets, is a stylesheet language used to describe the presentation of a document written in HTML. CSS enhances the visual presentation of web content by defining how HTML elements should be styled. This documentation provides an in-depth guide to CSS, covering fundamental concepts and advanced techniques.
+    </p>
+  </section>
+
+  <section class="main-section" id="prerequisites" >
+    <header id="prerequisites">Prerequisites</header>
+
+    <p>You should learn the basics of HTML before attempting any CSS.</p>
+    <p>
+      Once you understand the fundamentals of HTML, we recommend that you learn further HTML and CSS at the same time, moving back and forth between the two topics. This is because HTML is far more interesting and much more fun to learn when you apply CSS, and you can't learn CSS without knowing HTML.
+    </p>
+    <p>
+      Before starting this topic, you should also be familiar with using computers and using the web passively (i.e., just looking at it, consuming the content). You should have a basic work environment set up, as detailed in Installing basic software, and understand how to create and manage files, as detailed in Dealing with files — both of which are parts of our Getting started with the web complete beginner's module.
+    </p>
     
+  </section>
+
+  <section class="main-section" id="selectors_and_declarations" >
+    <header id="selectors_and_declarations">Selectors and Declarations</header>
+
+<p>
+  Selectors: CSS selectors are patterns that select and style HTML elements. Selectors can be based on element names, classes, IDs, attributes, and more.
+</p>
+<p>
+  <pre>
+    <code>
+    /* Example Selector */
+      p {
+        /* Declarations */
+        color: blue;
+        font-size: 16px;
+      }
+      </code>
+  </pre>
+</p>
+<p>
+  Declarations: Declarations within a selector define the style properties and their values. In the example above, the p selector sets the color of paragraphs to blue and the font size to 16 pixels.
+</p>
+  </section>
+
+  <section class="main-section" id="box_model" >
+<header id="box_model">Box Model</header>
+
+<p>
+  The CSS box model represents the structure of an HTML element as a rectangular box. It consists of content, padding, border, and margin.
+</p>
+<p>
+  <pre>
+    <code>
+    /* Example Box Model */
+    div {
+    box-sizing: border-box;
+    width: 200px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 10px;
+    }
+    </code>
+  </pre>
+</p>
+<p>
+  <ul>
+    <li>box-sizing: Determines how the total width and height of an element are calculated.</li>
+<li>width: Sets the width of the content box.</li>
+<li>padding: Adds space inside the border.</li>
+<li>border: Sets the width, style, and color of the border.</li>
+<li>margin: Adds space outside the border.</li>
+  </ul>
+</p>
+
+  </section>
+
+  <section class="main-section" id="layout" >
+<header id="layout">Layout</header>
+
+<p>
+  CSS provides various layout techniques to position and structure elements within a document:
+</p>
+<p>
+  <ul>
+    <li>Floats: float: left; can be used for simple layouts.</li>
+    <li>Positioning: position: relative; allows precise control over element positioning.</li>
+<li>Flexbox: display: flex; is a powerful one-dimensional layout model.</li>
+<li>Grid: display: grid; provides a flexible two-dimensional layout system.</li>
+  </ul>
+</p>
+
+  </section>
+
+  <section class="main-section" id="colors_and_typography" >
+    <header id="colors_and_typography">Colors and Typography
+</header>
+
+  <p>
+    Set colors and typography properties to enhance the visual appeal of the webpage:
+  </p>
+<p>
+  <pre>
+    <code>
+    /* Example Colors and Typography */
+    body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    }
+    </code>
+  </pre>
+</p>
+<p>
+  <ul>
+    <li>background-color: Sets the background color.</li>
+<li>color: Defines the text color.</li>
+<li>font-family: Specifies the font for text.</li>
+<li>font-size: Sets the size of the font.</li>
+  </ul>
+</p>
+  </section>
+
+  <section class="main-section" id="flexbox" >
+    <header id="flexbox">Flexbox</header>
+
+    <p>
+      Flexbox is a layout model designed to distribute space along a single axis:
+    </p>
+    <p>
+      <pre>
+        <code>
+        /* Example Flexbox */
+        .container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+         }
+         </code>
+      </pre> 
+    </p>
+    <p>
+      <ul>
+        <li>display: Defines a flex container.</li>
+<li>justify-content: Aligns items along the main axis.</li>
+<li>align-items: Aligns items along the cross axis.</li>
+      </ul>  
+    </p>
+
+  </section>
+
+  <section class="main-section" id="grid" >
+    <header id="grid">Grid</header>
+
+    <p>
+      CSS Grid is a two-dimensional layout system that simplifies complex layouts:
+    </p>
+    <p>
+      <pre>
+        <code>
+        /* Example Grid */
+        .container {
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+        }
+        </code>
+      </pre>
+    </p>
+    <p>
+      <ul>
+        <li>display: Defines a grid container.</li>
+<li>grid-template-columns: Specifies the size of columns.</li>
+      </ul>
+    </p>
+
+  </section>
+
+  <section class="main-section" id="transitions_and_animations" >
+    <header id="transitions_and_animations">Transitions and Animations</header>
+
+    <p>
+      Apply transitions and animations for smooth visual effects:
+    </p>
+    <p>
+      <pre>
+        <code>
+        /* Example Transitions and Animations */
+        button {
+          transition: background-color 0.3s ease-in-out;
+        }
+
+        @keyframes slide-in {
+          from {
+            transform: translateX(-100%);
+        }
+          to {
+            transform: translateX(0);
+        }
+      }
+      </code>
+      </pre>
+    </p>
+    <p>
+      <ul>
+        <li>transition: Defines a smooth transition for a specified property.</li>
+<li>@keyframes: Defines animations with keyframes.</li>
+      </ul>
+    </p>
+ 
+  </section>
+
+  <section class="main-section" id="media_queries" >
+    <header id="media_queries">Media Queries</header>
+
+    <p>
+      Media queries adapt styles based on device characteristics like screen width:
+    </p>
+    <p>
+      <pre>
+        <code>
+        /* Example Media Query */
+        @media screen and (max-width: 600px) {
+          body {
+            font-size: 14px;
+          }
+        }
+        </code>
+      </pre>
+    </p>
+    <p>
+      <ul>
+        <li>@media: Defines a media query.</li>
+<li>max-width: Specifies the maximum width for the styles to apply.</li>
+      </ul>
+    </p>
+  </section>
+
+  <section class="main-section" id="browser_compatibility" >
+    <header id="browser_compatibility">Browser Compatibility</header>
+
+    <p>
+      Check and handle browser-specific issues using vendor prefixes or feature detection. This ensures consistent rendering across different browsers.
+    </p>
+  
+  </section>
+
+  <section class="main-section" id="validation" >
+    <header id="validation">Validation</header>
+
+    <p>
+      Validate CSS using tools like W3C CSS Validation Service to ensure code correctness and adherence to standards.
+    </p>
+    
+  </section>
+
+  <section class="main-section" id="conclusion" >
+    <header id="conclusion">Conclusion</header>
+
+    <p>
+      CSS is a crucial tool for web developers to control the visual presentation of HTML content. This documentation serves as a comprehensive guide, covering fundamental concepts like selectors and declarations, the box model, layout techniques, and advanced features such as Flexbox and Grid. Apply these principles to create visually appealing, responsive, and cross-browser compatible web designs.
+    </p>
+    
+  </section>
+
+</main>
 </body>
+
 </html>
